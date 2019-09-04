@@ -1,0 +1,19 @@
+body{
+  margin:0px;  
+}
+.box{
+    float: left;
+    height:100vh;
+    width:50%;
+    align-items: center;
+}
+.box.leftSide{
+    background-color: #0080ff;
+}
+.box.rightSide{
+    background-color: whitesmoke;
+}
+.container-fluid .row .box h1{
+    color: white;
+    font-weight: bold;
+}
