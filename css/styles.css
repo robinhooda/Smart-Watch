@@ -60,7 +60,7 @@ body{
     position: absolute;
     color:white;
     top:26%;
-    left:16%;
+    left:11%;
     font-style: italic;
     font-size: 1.5em;
     line-height: 37pt;
@@ -74,7 +74,7 @@ body{
     font-size: 18px;
     line-height: 18pt;
 }
-.colorGreen{
+.container-fluid.box.rightSide.watchFrame.colorGreen{
     color: rgb(2, 226, 2);
 }
 
