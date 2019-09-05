@@ -56,12 +56,25 @@ body{
     width: 18.16px;
     z-index:1;
 }
-#hour{
+#time{
     position: absolute;
     color:white;
     top:26%;
-    left:20%;
+    left:16%;
     font-style: italic;
     font-size: 1.5em;
     line-height: 37pt;
 }
+#day{
+    position: absolute;
+    color:white;
+    top:26%;
+    left:110%;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 18pt;
+}
+.colorGreen{
+    color: rgb(2, 226, 2);
+}
+
