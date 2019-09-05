@@ -1,5 +1,6 @@
 body{
-  margin:0px;  
+  margin:0px;
+  background-color: #0080ff  
 }
 .box{
     float: left;
@@ -16,4 +17,8 @@ body{
 .container-fluid .row .box h1{
     color: white;
     font-weight: bold;
+}
+.container-fluid .row .box #watch{
+    color:black;
+
 }
