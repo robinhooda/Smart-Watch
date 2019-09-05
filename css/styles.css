@@ -22,3 +22,36 @@ body{
     color:black;
 
 }
+.upperStrap
+{   
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    background: #332E2E;
+    border-radius: 25px;
+    top: 15%;
+}
+.watchFrame
+{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #0F0E0E;
+    border-radius: 34px;
+    z-index: 1;
+}
+.lowerStrap{
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    background: #332E2E;
+    border-radius: 25px;
+    top:65%
+}
+.homeButton{
+    position: absolute;
+    width: 18.16px;
+    height: 16.09px;
+    background: #C0C0C0;
+    z-index:2;
+}
