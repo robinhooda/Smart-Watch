@@ -56,3 +56,12 @@ body{
     width: 18.16px;
     z-index:1;
 }
+#hour{
+    position: absolute;
+    color:white;
+    top:26%;
+    left:20%;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 37pt;
+}
