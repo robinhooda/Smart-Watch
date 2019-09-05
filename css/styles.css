@@ -1,12 +1,12 @@
 body{
+  background-color: #0080ff;
   margin:0px;
-  background-color: #0080ff  
 }
 .box{
+    align-items: center;
     float: left;
     height:100vh;
     width:50%;
-    align-items: center;
 }
 .box.leftSide{
     background-color: #0080ff;
@@ -24,20 +24,20 @@ body{
 }
 .upperStrap
 {   
-    position: absolute;
-    width: 150px;
-    height: 130px;
     background: #332E2E;
     border-radius: 25px;
+    height: 130px;
     top: 15%;
+    position: absolute;
+    width: 150px;
 }
 .watchFrame
 {
-    position: absolute;
-    width: 220px;
-    height: 220px;
     background: #0F0E0E;
     border-radius: 34px;
+    height: 220px;
+    position: absolute;
+    width: 220px;
     z-index: 1;
 }
 .lowerStrap{
@@ -49,9 +49,10 @@ body{
     top:65%
 }
 .homeButton{
+    color: azure;
+    height: 16.09px;
+    top: 65%;
     position: absolute;
     width: 18.16px;
-    height: 16.09px;
-    background: #C0C0C0;
-    z-index:2;
+    z-index:1;
 }
