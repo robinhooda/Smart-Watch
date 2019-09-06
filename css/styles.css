@@ -43,6 +43,7 @@ body{
 .homeDisplay
 {
     background: #0F0E0E;
+    background: ;
     border-radius: 34px;
     height: 195px;
     position: absolute;
@@ -71,7 +72,7 @@ body{
     position: absolute;
     color:white;
     top:26%;
-    left:11%;
+    left:17%;
     font-style: italic;
     font-size: 1.5em;
     line-height: 37pt;
@@ -80,7 +81,7 @@ body{
     position: absolute;
     color:white;
     top:26%;
-    left:110%;
+    left:100%;
     font-style: italic;
     font-size: 18px;
     line-height: 18pt;
@@ -99,3 +100,6 @@ body{
 #music{
     border-radius: 34px;
   }
+#month{
+    font-size: 12px;
+}
