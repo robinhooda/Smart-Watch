@@ -9,7 +9,7 @@ body{
     width:50%;
 }
 .box.leftSide{
-    background-color: #0080ff;
+    background-color:rgb(2, 226, 2);
 }
 .box.rightSide{
     background-color: whitesmoke;
@@ -26,7 +26,7 @@ body{
 {   
     background: #332E2E;
     border-radius: 25px;
-    height: 130px;
+    height: 145px;
     top: 15%;
     position: absolute;
     width: 150px;
@@ -43,15 +43,15 @@ body{
 .lowerStrap{
     position: absolute;
     width: 150px;
-    height: 130px;
+    height: 145px;
     background: #332E2E;
     border-radius: 25px;
-    top:65%
+    top:63%
 }
 .homeButton{
     color: azure;
     height: 16.09px;
-    top: 65%;
+    top: 64%;
     position: absolute;
     width: 18.16px;
     z-index:1;
