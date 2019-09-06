@@ -9,7 +9,7 @@ body{
     width:50%;
 }
 .box.leftSide{
-    background-color:rgb(2, 226, 2);
+    background-color:#0080ff;
 }
 .box.rightSide{
     background-color: whitesmoke;
@@ -39,6 +39,17 @@ body{
     position: absolute;
     width: 220px;
     z-index: 1;
+}
+.homeDisplay
+{
+    background:#0F0E0E;
+    border-radius: 34px;
+    height: 195px;
+    position: absolute;
+    width: 212px;
+    z-index: 1;
+    top:4px;
+    left:4px;
 }
 .lowerStrap{
     position: absolute;
@@ -75,6 +86,6 @@ body{
     line-height: 18pt;
 }
 .container-fluid.box.rightSide.watchFrame.colorGreen{
-    color: rgb(2, 226, 2);
+    color: #0080ff;
 }
 
