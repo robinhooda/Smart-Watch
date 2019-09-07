@@ -47,8 +47,12 @@ let dayInString = dayInNumber==0?
     
 $(function(){
         $(".menu").hide();
-        $(".fa-home").click(function() {
+        $(".fa-home,.homeDisplay").click(function() {
               $(".menu").toggle();        
-              $(".homedisplay").toggle();
+              $(".homeDisplay").toggle();
         })
+        $("#music").click(function() {
+                $(".menu").toggle();        
+                $(".homedisplay").toggle();
+          })
 })
