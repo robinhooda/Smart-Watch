@@ -1,3 +1,16 @@
+/* 
+CSS file for the Smaer Watch APP
+
+    Project Name   : Smart Watch App
+    Languages Used : HTML5, CSS3, Javascript , Bootstrap,JQuery
+    Author         : Robin Hooda
+    Description    : A web application for the smart watch having the following functionalities:
+                        1) Music Player- The user will be able to play music from the available list.
+                        2) Messaging
+                        3) Timer
+    Link           : https://github.com/robinhooda/Smart-Watch
+ */
+
 body{
   background-color: #0080ff;
   margin:0px;
@@ -89,7 +102,7 @@ body{
 {
     background:#000000;
     border-radius: 34px;
-    height: 195px;
+    height: 200px;
     position: absolute;
     width: 212px;
     z-index: 1;
