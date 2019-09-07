@@ -40,12 +40,14 @@ let dayInString = dayInNumber==0?
     }
     document.getElementById("day").innerHTML=dayInString;   
     if(dateInNumber<10)
-            document.getElementById("month").innerHTML=monthInString+"- 0"+dateInNumber;
+            document.getElementById("month").textContent=monthInString+"- 0"+dateInNumber;
     else
-            document.getElementById("month").innerHTML=monthInString+"-"+dateInNumber;
+            document.getElementById("month").textContent=monthInString+"-"+dateInNumber;
           
     
-    
-    
-
-    
+$(function(){
+        $( ".homeButton" ).click(function(){
+                $( ".musicMenu" ).show();
+                $( ".homedisplay" ).hide();
+        })
+})

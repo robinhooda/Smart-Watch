@@ -110,3 +110,20 @@ body{
 .musicMenu.time{
     font-size:8px;
 }
+.notification{
+    position: absolute;
+    color:rgb(241, 240, 240);
+    left:8%;
+    top: 5%;
+    font-size: 12px;
+    font-weight:bold;
+
+}
+/* #notificationTime{
+    right:8%;
+
+}
+#notificationDate{
+    left:8%;
+    
+} */
