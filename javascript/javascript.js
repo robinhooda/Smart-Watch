@@ -1,26 +1,3 @@
-            // let date = new Date();   
-            // let dayInNumber= date.getDay();
-            // let dayInString = dayInNumber==0?
-            // 'Sunday':dayInNumber==1?
-            // 'Monday':dayInNumber==2?
-            // 'Tuesday':dayInNumber==3?
-            // 'Wednesday':dayInNumber==4?
-            // 'Thursday':dayInNumber==5?
-            // 'Friday':'Saturday';
-            // let hours = date.getHours();
-            // let minutes = date.getMinutes();
-            // if(minutes<10)
-            //      minutes = '0'+minutes;
-            // document.getElementsByClassName("date")[0]
-            // .innerHTML = dayInString+" "+hours+":"+minutes+" "+meridiem;
-            // document.getElementsByClassName("weather")[0]
-            // .innerHTML = arr.weather;
-            // document.getElementsByClassName("degree")[0]
-            // .innerHTML = arr.degree;
-            
-//         }
-//     })
-// }
 
 // $(function(){
 //     $( ".musicScreen" ).hide();
@@ -33,8 +10,9 @@
 let currentDate = new Date();
 let minute= currentDate.getMinutes();
 let dayInNumber= currentDate.getDay();
-var monthInNumber=currentDate.getMonth()-1;
-var dateInNumber=currentDate.getDate();
+let monthInNumber=currentDate.getMonth()-1;
+let dateInNumber=currentDate.getDate();
+// let currentTime=minute
 let dayInString = dayInNumber==0?
         'Sunday':dayInNumber==1?
         'Monday':dayInNumber==2?
@@ -54,15 +32,19 @@ let dayInString = dayInNumber==0?
         'Oct':monthInNumber==9?
         'Nov':'Dec';
     document.getElementById("hour").innerHTML=currentDate.getHours();
-    if(minute<10)
+    if(minute<10){
             document.getElementById("mins").innerHTML="0"+currentDate.getMinutes();
-    else
+    }
+    else{
             document.getElementById("mins").innerHTML=currentDate.getMinutes();
+    }
     document.getElementById("day").innerHTML=dayInString;   
     if(dateInNumber<10)
             document.getElementById("month").innerHTML=monthInString+"- 0"+dateInNumber;
     else
             document.getElementById("month").innerHTML=monthInString+"-"+dateInNumber;
+          
+    
     
     
 

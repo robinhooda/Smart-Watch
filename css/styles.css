@@ -24,7 +24,7 @@ body{
 }
 .upperStrap
 {   
-    background: #332E2E;
+    background: #525050;
     border-radius: 25px;
     height: 145px;
     top: 12%;
@@ -56,9 +56,9 @@ body{
     position: absolute;
     width: 150px;
     height: 145px;
-    background: #332E2E;
+    background: #525050;
     border-radius: 25px;
-    top:63%
+    top:64%
 }
 .homeButton{
     color: rgb(226, 235, 235);
@@ -106,4 +106,7 @@ body{
 .homeButton:hover{
     color:#839083;
     cursor: pointer;
+}
+.musicMenu.time{
+    font-size:8px;
 }
