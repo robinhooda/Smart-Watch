@@ -1,18 +1,9 @@
 
-// $(function(){
-//     $( ".musicScreen" ).hide();
-//     $( ".homeScreen .homeButton" ).click(function() {
-//         $( ".musicScreen" ).show();
-//         // $( ".watch-screen" ).css({'background-color':'#222831','background-image':'none'});
-//     })
-//   })
-
 let currentDate = new Date();
 let minute= currentDate.getMinutes();
 let dayInNumber= currentDate.getDay();
 let monthInNumber=currentDate.getMonth()-1;
 let dateInNumber=currentDate.getDate();
-// let currentTime=minute
 let dayInString = dayInNumber==0?
         'Sunday':dayInNumber==1?
         'Monday':dayInNumber==2?
@@ -53,12 +44,11 @@ $(function(){
               $(".musicScreen").hide();
               $(".homeDisplay").toggle();
         })
-        $(".fa-home,.homeDisplay").dblclick(function() {
-                $(".menu").show();        
-                $(".homeDisplay,.musicScreen").hide();
-          })
+        // $(".fa-home,.homeDisplay").dblclick(function() {
+        //         $(".menu").show();        
+        //         $(".homeDisplay,.musicScreen").hide();
+        //   })
         $("#music").click(function() {
                 $(".musicScreen").show();        
-                // $(".homedisplay").toggle();
           })
 })

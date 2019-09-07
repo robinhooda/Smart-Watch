@@ -49,7 +49,7 @@ body{
     width: 212px;
     z-index: 1;
     top:4px;
-    left:4px;
+    left:3px;
 }
 .lowerStrap{
     position: absolute;
@@ -118,14 +118,6 @@ body{
     font-weight:bold;
 
 }
-/* #notificationTime{
-    right:8%;
-
-}
-#notificationDate{
-    left:8%;
-    
-} */
 .menu{
     background:#000000;
     border-radius: 34px;
