@@ -6,13 +6,14 @@
 //                        1) Music Player- The user will be able to play music from the available list.
 //                        2) Messaging
 //                        3) Timer
-//      Link           : https://github.com/robinhooda/Smart-Watch
+//      Link           : https://robinhooda.github.io/Smart-Watch/
 
 let currentDate = new Date();
 let minute= currentDate.getMinutes();
 let dayInNumber= currentDate.getDay();
 let monthInNumber=currentDate.getMonth()-1;
 let dateInNumber=currentDate.getDate();
+// for weekday
 let dayInString = dayInNumber==0?
         'Sunday':dayInNumber==1?
         'Monday':dayInNumber==2?
@@ -20,6 +21,7 @@ let dayInString = dayInNumber==0?
         'Wednesday':dayInNumber==4?
         'Thursday':dayInNumber==5?
         'Friday':'Saturday';
+// for month
 let monthInString = monthInNumber==0?
         'Jan':monthInNumber==1?
         'Feb':monthInNumber==2?
@@ -99,7 +101,7 @@ else
 
 
 
-
+// Jquery function
 $(function(){
         $(".musicScreen").hide();
         $(".menu").hide();
