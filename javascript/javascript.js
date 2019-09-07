@@ -46,13 +46,19 @@ let dayInString = dayInNumber==0?
           
     
 $(function(){
+        $(".musicScreen").hide();
         $(".menu").hide();
         $(".fa-home,.homeDisplay").click(function() {
               $(".menu").toggle();        
+              $(".musicScreen").hide();
               $(".homeDisplay").toggle();
         })
+        $(".fa-home,.homeDisplay").dblclick(function() {
+                $(".menu").show();        
+                $(".homeDisplay,.musicScreen").hide();
+          })
         $("#music").click(function() {
-                $(".menu").toggle();        
-                $(".homedisplay").toggle();
+                $(".musicScreen").show();        
+                // $(".homedisplay").toggle();
           })
 })

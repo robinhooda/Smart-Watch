@@ -45,7 +45,12 @@
 <!-----musicMenu starts------>
                                 <div class="menu">
                                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                                <div class="carousel-inner">
+                                                <ol class="carousel-indicators">
+                                                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                                                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                                                      </ol>    
+                                            <div class="carousel-inner">
                                                   <div class="carousel-item active swipe" >
                                                     <i class="fas fa-music menuIcon"id="music"></i>
                                                   </div>
@@ -76,14 +81,14 @@
                                </div>
 <!-----musicMenu starts------>
 <!-----musicScreen starts------>
-                              <!-- <div class="musicScreen">
+                              <div class="musicScreen">
                                   <span class="topView">
 
                                   </span>  
                                   <iframe src="https://open.spotify.com/embed/playlist/2ghEyQvqc8ooFAWf8BRLOM"
                                    width="210" height="180" frameborder="0" allowtransparency="true"
                                     allow="encrypted-media"id="musicPlayer"></iframe>
-                              </div>  -->
+                              </div> 
 <!-----musicScreen ends------>
                           </div> 
                           <div class="homeButton"><i class="fas fa-home" ></i></div>
