@@ -157,5 +157,7 @@ body{
     z-index:1;
 }
 #music.hover{
+    color:rgb(43, 134, 43);
+    cursor:pointer;
 
 }
