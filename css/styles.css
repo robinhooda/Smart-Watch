@@ -149,15 +149,22 @@ body{
 .menuIcon{
     color: #00fb00;
     height: 50px;
-    font-size: 7em;
+    font-size: 6em;
     top: 15%;
-    left:19%;
+    left:24%;
     position: absolute;
     width: 50px;
     z-index:1;
 }
-#music.hover{
-    color:rgb(43, 134, 43);
+#music:hover{
+    color:0080ff;
     cursor:pointer;
-
+}
+#message:hover{
+    color:0080ff;
+    cursor:pointer;
+}
+#clock:hover{
+    color:0080ff;
+    cursor:pointer;
 }
