@@ -33,7 +33,7 @@ body{
 }
 .watchFrame
 {
-    background: #0F0E0E;
+    background: #000000;
     border-radius: 34px;
     height: 220px;
     position: absolute;
@@ -42,8 +42,7 @@ body{
 }
 .homeDisplay
 {
-    background: #0F0E0E;
-    background: ;
+    background: #000000;
     border-radius: 34px;
     height: 195px;
     position: absolute;
@@ -88,7 +87,7 @@ body{
 }
 .musicScreen
 {
-    background: #0F0E0E;
+    background:#000000;
     border-radius: 34px;
     height: 195px;
     position: absolute;
@@ -97,7 +96,7 @@ body{
     top:4px;
     left:4px;
 }
-#music{
+#musicPlayer{
     border-radius: 34px;
   }
 #month{
@@ -127,3 +126,33 @@ body{
     left:8%;
     
 } */
+.menu{
+    background:#000000;
+    border-radius: 34px;
+    height: 195px;
+    position: absolute;
+    width: 212px;
+    z-index: 1;
+    top:4px;
+    left:4px;
+}
+.swipe{
+    background: #000000;
+    border-radius: 34px;
+    height: 195px;
+    position: absolute;
+    width: 190px;
+    z-index: 1;
+    top:14px;
+    left:4px;
+}
+.menuIcon{
+    color: #00fb00;
+    height: 50px;
+    font-size: 7em;
+    top: 15%;
+    left:19%;
+    position: absolute;
+    width: 50px;
+    z-index:1;
+}
