@@ -10,6 +10,7 @@
 
 let currentDate = new Date();
 let minute= currentDate.getMinutes();
+let hours=currentDate.getHours();
 let dayInNumber= currentDate.getDay();
 let monthInNumber=currentDate.getMonth()-1;
 let dateInNumber=currentDate.getDate();
@@ -45,7 +46,11 @@ if(dateInNumber<10)
         document.getElementById("month").textContent=monthInString+"- 0"+dateInNumber;
 else
         document.getElementById("month").textContent=monthInString+"-"+dateInNumber;
-          
+if(hours<10)
+        document.getElementById("hour").innerHTML="0"+currentDate.getHours();
+else
+        document.getElementById("hour").innerHTML=currentDate.getHours();       
+        
    
         //     let watch = document.getElementsByClassName("digits")[0],
         //     start = document.getElementById("timerplay"),
@@ -104,6 +109,7 @@ else
 // Jquery function
 $(function(){
         $(".musicScreen").hide();
+
         $(".menu").hide();
         $(".fa-home,.homeDisplay").click(function() {
               $(".menu").toggle();        
