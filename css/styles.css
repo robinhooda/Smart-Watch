@@ -62,7 +62,7 @@ body{
     width: 212px;
     z-index: 1;
     top:4px;
-    left:3px;
+    left:1px;
 }
 .lowerStrap{
     position: absolute;
@@ -84,7 +84,7 @@ body{
     position: absolute;
     color:white;
     top:26%;
-    left:17%;
+    left:10%;
     font-style: italic;
     font-size: 1.5em;
     line-height: 37pt;
@@ -167,6 +167,7 @@ body{
     left:23%;
     font-size: 6.3em;
     transition: 0.2s;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 #message:hover{
     color:0080ff;
@@ -181,4 +182,12 @@ body{
     left:27%;
     font-size: 6.3em;
     transition: 0.2s;
+}
+
+
+
+@media screen and ( width: 500 ) {
+    .rightside {
+        display: none;
+    }
 }
