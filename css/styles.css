@@ -12,7 +12,7 @@ CSS file for the Smaer Watch APP
  */
 
 body{
-  background-color: #0080ff;
+ /* background-color: #0080ff; */
   margin:0px;
 }
 .box{
@@ -32,7 +32,7 @@ body{
     font-weight: bold;
 }
 .container-fluid .row .box #watch{
-    color:black;
+    color:#00fb00;
 
 }
 .upperStrap
