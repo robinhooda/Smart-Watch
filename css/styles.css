@@ -153,7 +153,9 @@ body{
     overflow:scroll;
     
 }
-
+.messageScreen::-webkit-scrollbar {
+    width: 0 !important
+}
 
 .swipe{
     background: #000000;
