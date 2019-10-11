@@ -150,7 +150,10 @@ body{
     z-index: 1;
     top:4px;
     left:4px;
+    overflow:scroll;
+    
 }
+
 
 .swipe{
     background: #000000;
