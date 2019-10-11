@@ -108,8 +108,9 @@ else
 
 // Jquery function
 $(function(){
+        $(".messageScreen").show();
         $(".musicScreen").hide();
-
+        $(".homeDisplay").hide();
         $(".menu").hide();
         $(".fa-home,.homeDisplay").click(function() {
               $(".menu").toggle();        

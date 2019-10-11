@@ -12,7 +12,7 @@ CSS file for the Smaer Watch APP
  */
 
 body{
-  background-color: #0080ff;
+  background-color: black;
   margin:0px;
 }
 .box{
@@ -22,7 +22,7 @@ body{
     width:50%;
 }
 .box.leftSide{
-    background-color:#0080ff;
+    background-color:black;
 }
 .box.rightSide{
     background-color: whitesmoke;
@@ -32,7 +32,7 @@ body{
     font-weight: bold;
 }
 .container-fluid .row .box #watch{
-    color:black;
+    color:#00fb00;
 
 }
 .upperStrap
@@ -141,6 +141,17 @@ body{
     top:4px;
     left:4px;
 }
+.messageScreen{
+    background:#000000;
+    border-radius: 34px;
+    height: 195px;
+    position: absolute;
+    width: 212px;
+    z-index: 1;
+    top:4px;
+    left:4px;
+}
+
 .swipe{
     background: #000000;
     border-radius: 34px;
@@ -162,7 +173,7 @@ body{
     z-index:1;
 }
 #music:hover{
-    color:0080ff;
+    color:#0fdb0f;
     cursor:pointer;
     left:23%;
     font-size: 6.3em;
@@ -170,14 +181,14 @@ body{
     animation: glow 1s ease-in-out infinite alternate;
 }
 #message:hover{
-    color:0080ff;
+    color:#0fdb0f;
     cursor:pointer;
     left:23%;
     font-size: 6.3em;
     transition: 0.2s;
 }
 #clock:hover{
-    color:0080ff;
+    color:#0fdb0f;
     cursor:pointer;
     left:27%;
     font-size: 6.3em;
