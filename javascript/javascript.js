@@ -108,14 +108,17 @@ else
 
 // Jquery function
 $(function(){
-        $(".messageScreen").show();
         $(".musicScreen").hide();
-        $(".homeDisplay").hide();
+
         $(".menu").hide();
+        $(".messageScreen").hide();
+
         $(".fa-home,.homeDisplay").click(function() {
               $(".menu").toggle();        
               $(".musicScreen").hide();
+              $(".messageScreen").hide();
               $(".homeDisplay").toggle();
+
         })
         // $(".fa-home,.homeDisplay").dblclick(function() {
         //         $(".menu").show();        
@@ -124,4 +127,15 @@ $(function(){
         $("#music").click(function() {
                 $(".musicScreen").show();        
           })
+        $("#message").click(function() {
+                 $(".messageScreen").show();        
+        })
+        // $(".fa-home").click(function() {
+        //         $(".menu").toggle();        
+        //         $(".musicScreen").hide();
+        //         $(".homeDisplay").toggle();
+
+        //   })
+
+        
 })

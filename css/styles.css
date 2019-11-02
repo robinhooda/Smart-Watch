@@ -153,6 +153,19 @@ body{
     overflow:scroll;
     
 }
+.messageHeading{
+    color: #00fb00 !important;
+}
+.mb-0{
+    color: aliceblue
+}
+.btn:hover{
+    font-size: 18px;
+    transition: 2 ms;
+    
+    
+}
+
 .messageScreen::-webkit-scrollbar {
     width: 0 !important
 }
