@@ -109,12 +109,13 @@ else
 // Jquery function
 $(function(){
         $(".musicScreen").hide();
-
+        // $("timerScreen").hide();
         $(".menu").hide();
         $(".messageScreen").hide();
 
         $(".fa-home,.homeDisplay").click(function() {
-              $(".menu").toggle();        
+              $(".menu").toggle();    
+        //       $("timerScreen").hide();    
               $(".musicScreen").hide();
               $(".messageScreen").hide();
               $(".homeDisplay").toggle();
@@ -130,6 +131,12 @@ $(function(){
         $("#message").click(function() {
                  $(".messageScreen").show();        
         })
+})
+        // $("#clock").click(function() {
+        //         $(".timerScreeen").show();        
+        //   })
+
+
         // $(".fa-home").click(function() {
         //         $(".menu").toggle();        
         //         $(".musicScreen").hide();
@@ -138,4 +145,56 @@ $(function(){
         //   })
 
         
-})
+// let watch = document.getElementsByClassName("digits")[0],
+// start = document.getElementById("start"),
+// stop = document.getElementById("stop"),
+// clear = document.getElementById("clear"),
+// seconds = 0,
+// minutes = 0,
+// hours = 0,
+// t;
+    
+//     function add() {
+//       seconds++;
+//       if (seconds >= 60) {
+//         seconds = 0;
+//         minutes++;
+//         if (minutes >= 60) {
+//           minutes = 0;
+//           hours++;
+//         }
+//       }
+    
+//       watch.textContent =
+//         (hours ? (hours > 9 ? hours : "0" + hours) : "00") +
+//         ":" +
+//         (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") +
+//         ":" +
+//         (seconds > 9 ? seconds : "0" + seconds);
+    
+//       timer();
+//     }
+//     function timer() {
+//       t = setTimeout(add, 1000);
+//     }
+    
+//     /* Start button */
+//     timerplay.onclick = timer;
+    
+//     /* Stop button */
+//     stop.onclick = function() {
+//       clearTimeout(t);
+//     };
+    
+//     /* Reset button */
+//     reset.onclick = function() {
+//       watch.textContent = "00:00:00";
+//       seconds = 0;
+//       minutes = 0;
+//       hours = 0;
+//     };
+//     $("#stop").on("click", function() {
+//       let lap = document.getElementById("timer").textContent;
+//       $(".lap").text(lap);
+//     });
+// 
