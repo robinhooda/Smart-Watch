@@ -109,13 +109,13 @@ else
 // Jquery function
 $(function(){
         $(".musicScreen").hide();
-        // $("timerScreen").hide();
+        $(".timerScreen").hide();
         $(".menu").hide();
         $(".messageScreen").hide();
 
         $(".fa-home,.homeDisplay").click(function() {
               $(".menu").toggle();    
-        //       $("timerScreen").hide();    
+              $(".timerScreen").hide();    
               $(".musicScreen").hide();
               $(".messageScreen").hide();
               $(".homeDisplay").toggle();
@@ -132,9 +132,11 @@ $(function(){
                  $(".messageScreen").show();        
         })
 })
-        // $("#clock").click(function() {
-        //         $(".timerScreeen").show();        
-        //   })
+        $("#clock").click(function() {
+                $(".menu").hide();
+                $(".timerScreen").show();    
+             
+          })
 
 
         // $(".fa-home").click(function() {
