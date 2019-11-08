@@ -143,7 +143,7 @@ body{
 }
 .messageScreen{
     background:#000000;
-    border-radius: 34px;
+    border-radius: 30px;
     height: 195px;
     position: absolute;
     width: 212px;
@@ -159,17 +159,27 @@ body{
 .mb-0{
     color: aliceblue
 }
-.btn:hover{
+/* .btn:hover{
     font-size: 18px;
     transition: 2 ms;
     
     
+} */
+
+.btn-link{
+    text-decoration: none !important;
+    color: white;
+}
+.messageHeading:hover{
+    color: white !important;
 }
 
 .messageScreen::-webkit-scrollbar {
     width: 0 !important
 }
-
+.cardBorder{
+    border: 0px !important;
+}
 .swipe{
     background: #000000;
     border-radius: 34px;
@@ -219,4 +229,9 @@ body{
     .rightside {
         display: none;
     }
+}
+
+.btn-success {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
 }
