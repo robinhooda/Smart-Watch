@@ -75,19 +75,12 @@
                                             </a>
                                     </div>
                     </div>
+                    <!--Timer Screen-->
                     <div class="timerScreen" style="display: block">
-                      <div class=" times">
-                              <div class="stopwatch">
-                                  </div>
-                                  <ul class="results">
-                                  </ul>
-                                  <h2 class ="digits"id="timer">00:00:00</h2>
-                                 <h2><p class="lap">00:00:00</p></h2> 
-                       <button type="button"  class="btn btn-success" id="timerplay">Start</button>
-                       <button type="button"  class="btn btn-info" id="reset">Reset</button>
-                       <button type="button" class="btn btn-primary" id="stop">Lap</button>
-                     
-                      </div>
+                      <p id="timer">00:00:00</p>
+                                   <i class="fa fa-play" id="start"></i>
+                                   <i class="fa fa-pause" id="stop"></i>
+                                   <i class="fa fa-refresh" id="reset" onclick="reset();"></i>
                   </div>
                   
 

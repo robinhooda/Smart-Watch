@@ -49,63 +49,82 @@ else
 if(hours<10)
         document.getElementById("hour").innerHTML="0"+currentDate.getHours();
 else
-        document.getElementById("hour").innerHTML=currentDate.getHours();       
-        
-   
-        //     let watch = document.getElementsByClassName("digits")[0],
-        //     start = document.getElementById("timerplay"),
-        //     stop = document.getElementById("stop"),
-        //     clear = document.getElementById("clear"),
-        //     seconds = 0,
-        //     minutes = 0,
-        //     hours = 0,
-        //     t;
-          
-        //   function add() {
-        //     seconds++;
-        //     if (seconds >= 60) {
-        //       seconds = 0;
-        //       minutes++;
-        //       if (minutes >= 60) {
-        //         minutes = 0;
-        //         hours++;
-        //       }
-        //     }
-          
-        //     watch.textContent =
-        //       (hours ? (hours > 9 ? hours : "0" + hours) : "00") +
-        //       ":" +
-        //       (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") +
-        //       ":" +
-        //       (seconds > 9 ? seconds : "0" + seconds);
-          
-        //     timer();
-        //   }
-        //   function timer() {
-        //     t = setTimeout(add, 1000);
-        //   }
-          
-        //   /* Start button */
-        //   timerplay.onclick = timer;
-          
-        //   /* Stop button */
-        //   stop.onclick = function() {
-        //     clearTimeout(t);
-        //   };
-          
-        //   /* Reset button */
-        //   reset.onclick = function() {
-        //     watch.textContent = "00:00:00";
-        //     seconds = 0;
-        //     minutes = 0;
-        //     hours = 0;
-        //   };            
+        document.getElementById("hour").innerHTML=currentDate.getHours();      
 
-
-
-
-
-
+// timer functionality
+var timer = document.getElementById('timer');
+   var startbtn = $('#start');
+   var stopbtn = $('#stop');
+   var resetbtn = $('#reset');
+   var watch = new Stopwatch(timer);
+   function reset(){
+        var sec=0, min=0, hour=0;
+        $('#timer').html(hour + ":" + min + ":" + sec);
+      };
+   // start and stop timer
+   function start() {
+     watch.start();
+   }
+   function stop() {
+     watch.stop();
+   }
+   startbtn.click(function() {
+     start();
+   });
+   // calling stop function
+   stopbtn.click(function() {
+     stop();
+   });
+   // calling reset function
+//    resetbtn.click(function(){
+//      reset();
+//    });
+   function Stopwatch(elem) {
+     var time = 0;
+     var offset;
+     var interval;
+     function update() {
+       if (this.isOn) {
+           time += delta();
+       }
+       elem.textContent = timeFormatter(time);
+     }
+     function delta() {
+       var now = performance.now();
+       var timePassed = now - offset;
+       offset = now;
+       return timePassed;
+     }
+     function timeFormatter(time) {
+       time = new Date(time);
+       var hours = time.getHours().toString();
+       var minutes= time.getMinutes().toString();
+       var seconds = time.getSeconds().toString();
+       if (hours.length < 2) {
+         hours = '0' + hours;
+       }
+       if (minutes.length < 2) {
+         minutes = '0' + minutes;
+       }
+       while (seconds.length < 2) {
+         seconds = '0' + seconds;
+       }
+       hours= hours-5;
+       minutes = minutes-30;
+       return hours + ':' + minutes + ':' + seconds;
+     }
+     this.start = function() {
+       interval = setInterval(update.bind(this), 10);
+       offset = performance.now();
+       this.isOn = true;
+     };
+     
+     this.stop = function() {
+       clearInterval(interval);
+       interval = null;
+       this.isOn = false;
+     };
+    
 // Jquery function
 $(function(){
         $(".musicScreen").hide();
@@ -121,82 +140,35 @@ $(function(){
               $(".homeDisplay").toggle();
 
         })
-        // $(".fa-home,.homeDisplay").dblclick(function() {
-        //         $(".menu").show();        
-        //         $(".homeDisplay,.musicScreen").hide();
-        //   })
         $("#music").click(function() {
                 $(".musicScreen").show();        
           })
         $("#message").click(function() {
                  $(".messageScreen").show();        
         })
-})
         $("#clock").click(function() {
                 $(".menu").hide();
-                $(".timerScreen").show();    
+                $(".timerScreen").show(); 
+                $("#stop").hide();   
              
-          })
+        })
+        $("#start").click(function(){
+                $("#stop").toggle();
+                $("#start").hide();
+        })
+        $("#stop").click(function(){
+                $("#start").toggle();
+                $("#stop").hide();
+        })
+         
+          
+})
+        
 
-
+        }
         // $(".fa-home").click(function() {
         //         $(".menu").toggle();        
         //         $(".musicScreen").hide();
         //         $(".homeDisplay").toggle();
 
         //   })
-
-        
-// let watch = document.getElementsByClassName("digits")[0],
-// start = document.getElementById("start"),
-// stop = document.getElementById("stop"),
-// clear = document.getElementById("clear"),
-// seconds = 0,
-// minutes = 0,
-// hours = 0,
-// t;
-    
-//     function add() {
-//       seconds++;
-//       if (seconds >= 60) {
-//         seconds = 0;
-//         minutes++;
-//         if (minutes >= 60) {
-//           minutes = 0;
-//           hours++;
-//         }
-//       }
-    
-//       watch.textContent =
-//         (hours ? (hours > 9 ? hours : "0" + hours) : "00") +
-//         ":" +
-//         (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") +
-//         ":" +
-//         (seconds > 9 ? seconds : "0" + seconds);
-    
-//       timer();
-//     }
-//     function timer() {
-//       t = setTimeout(add, 1000);
-//     }
-    
-//     /* Start button */
-//     timerplay.onclick = timer;
-    
-//     /* Stop button */
-//     stop.onclick = function() {
-//       clearTimeout(t);
-//     };
-    
-//     /* Reset button */
-//     reset.onclick = function() {
-//       watch.textContent = "00:00:00";
-//       seconds = 0;
-//       minutes = 0;
-//       hours = 0;
-//     };
-//     $("#stop").on("click", function() {
-//       let lap = document.getElementById("timer").textContent;
-//       $(".lap").text(lap);
-//     });
-// 

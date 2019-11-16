@@ -141,6 +141,12 @@ body{
     top:4px;
     left:4px;
 }
+.timerScreen{
+    color:white;
+    font-size: 3vw;
+    justify-content: center;
+    text-align: center;
+}
 .messageScreen{
     background:#000000;
     border-radius: 30px;
