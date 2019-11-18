@@ -101,13 +101,13 @@ var timer = document.getElementById('timer');
        var minutes= time.getMinutes().toString();
        var seconds = time.getSeconds().toString();
        if (hours.length < 2) {
-         hours = '0' + hours;
+         hours = '00' + hours;
        }
        if (minutes.length < 2) {
-         minutes = '0' + minutes;
+         minutes = '00' + minutes;
        }
        while (seconds.length < 2) {
-         seconds = '0' + seconds;
+         seconds = '00' + seconds;
        }
        hours= hours-5;
        minutes = minutes-30;
@@ -149,16 +149,21 @@ $(function(){
         $("#clock").click(function() {
                 $(".menu").hide();
                 $(".timerScreen").show(); 
-                $("#stop").hide();   
+                $("#stop").hide(); 
+                $("#reset").show();
+                $("#start").show();
+
              
         })
         $("#start").click(function(){
                 $("#stop").toggle();
                 $("#start").hide();
+                
         })
         $("#stop").click(function(){
                 $("#start").toggle();
                 $("#stop").hide();
+                $("#reset").toggle();
         })
          
           
