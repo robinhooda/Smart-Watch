@@ -8,7 +8,7 @@ https://smartwatchbyrobinhooda.netlify.com/
 
 # Screens
 
-![Layout](https://github.com/Md-Mudassir/SmartWatch/blob/master/img/wall.JPG)
+![Layout](https://github.com/robinhooda/Smart-Watch/blob/master/images/homeScreen.PNG)
 
 ## Design in Figma:
 Initially I designed the design layout of each process using Figma. [View Design](https://www.figma.com/file/lqa1rNjOt0XqfEdo3glBXW/SmartWatch-V1?node-id=0:1)
