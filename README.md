@@ -1,7 +1,7 @@
 # Smart-Watch!
 
 Hey Geeks! This project is a web based smart watch which can play music over spotify & has inbuilt timer & can display messages & it's developed using HTML,CSS,JavaScript,Bootstrap,jQuery.
-https://smart-watch.netlify.com
+https://smartwatchbyrobinhooda.netlify.com/
 
 ![Layout](https://github.com/Md-Mudassir/SmartWatch/blob/master/img/wall.JPG)
 
