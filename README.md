@@ -8,10 +8,10 @@ https://smartwatchbyrobinhooda.netlify.com/
 
 # Screens
 
-![Layout](https://github.com/Md-Mudassir/SmartWatch/blob/master/img/wall.JPG)
+![Layout](https://github.com/robinhooda/Smart-Watch/blob/master/images/homeScreen.PNG)
 
 ## Design in Figma:
-Initially I designed the design layout of each process using Figma. [View Design](https://www.figma.com/file/lqa1rNjOt0XqfEdo3glBXW/SmartWatch-V1?node-id=0:1)
+Initially I designed the design layout of each process using Figma. [View Design](https://www.figma.com/file/jSZzLolRCpgnHz7nib78Rd/Untitled?node-id=0%3A1)
 
 ## Design in HTML,CSS :
 Next I tried to implement the design in HTML document using CSS,Bootstrap.
